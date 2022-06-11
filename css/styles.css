@@ -1,0 +1,537 @@
+:root {
+  --primary: #172339;
+  --dark: #49566D;
+  --light: #FAF8F6;
+  --background: #878787;
+} 
+
+html {
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;;
+  color: var(--primary);
+  background-color: var(--light);
+  overflow-x: hidden;
+}
+
+body {
+  /* background-color: #172339; */
+  margin: 1rem 5rem 0 5rem;
+  height: 1450px;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-areas: 
+  'nav-bar'
+  'hero'
+  'review'
+  'beneath'
+  'footer';
+  align-items: center;
+  width: 100%;
+  min-height: 20rem;
+}
+
+/* Nav Bar Styling */
+.nav-bar {
+  grid-area: nav-bar;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem; 
+  align-items: center;
+  width: 100%;
+}
+
+.transparent{
+  margin-left: 11rem;
+  background-color: var(--light);
+  text-align: center;
+  border: 1px solid var(--primary);
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  width: 13rem;
+  font-weight: 900;
+}
+
+.transparent:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+/* Hero Section styling */
+.hero {
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 4rem;
+  width: 82rem;
+  /* align-items: center; */
+}
+
+/* hero curved line */
+.hero-cl {
+  position: relative;
+  top: 4rem;
+  left: 23rem;
+}
+
+/* hero title div */
+.hero-title {
+  position: relative;
+  top: 0.5rem;
+}
+
+.hero-title h1 {
+  /* background-color: #172339; */
+  /* display: inline-block; */
+  font-size: 5rem;
+  font-weight: 400;
+  width: 50rem;
+  line-height: 5rem;
+}
+
+.hero-title span {
+  font-weight: 800;
+}
+
+.hero-title p {
+  /* background-color: #172339; */
+  position: relative;
+  width: 19rem;
+  line-height: 1.6rem;
+  top: -3.3rem;
+  color: var(--background);
+}
+
+.beta-request {
+  background-color: var(--primary);
+  text-align: center;
+  border: 1px solid var(--primary);
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  width: 13rem;
+  font-weight: 900;
+  color: var(--light);
+  position: relative;
+  top: -2rem;
+}
+
+.beta-request:hover {
+  background-image: linear-gradient(to bottom right, #A060FF, #CB30E3, #FFA84E);
+  border: none;
+}
+
+/* hero phone */
+.phone {
+  position: relative;
+  right: 19.9rem;
+  z-index: -1;
+  background-image: url('/assets/image-hero-portrait.webp');
+  background-repeat: no-repeat;
+  width: 23rem;
+}
+
+/* Hero Rating */
+.rating {
+  position: relative;
+  right: 16rem;
+  margin: auto;
+}
+
+/* numbers */
+.number-count {
+  font-size: 3rem;
+  font-weight:600;
+}
+
+.rating h4 {
+  position: relative;
+  color: var(--background);
+  top: -3rem;
+}
+
+/* Review Styling */
+.rectangle-blue {
+  grid-area: review;
+  background-color: var(--primary);
+  display: grid;
+  /* grid-gap: 1rem; */
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 1.5rem;
+  justify-content: center;
+  width: 75.5rem;
+  height: 34rem;
+  position: relative;
+  top: 2rem;
+  margin-bottom: -15rem;
+}
+
+.jeremy-pic {
+  position: relative;
+  bottom: 2.9rem;
+  right: 28rem;
+}
+
+.curved-line {
+  position: relative;
+  right: 23rem;
+  top: 10rem;
+  height: 10rem;
+}
+
+.message {
+  /* background-color: red; */
+  color: var(--light);
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  right: 13rem;
+  top: -5rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.message h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.message span {
+  font-weight: 800;
+}
+
+.message h3 {
+  position: relative;
+  top: 1.5rem;
+}
+
+.cmo {
+  position: relative;
+}
+
+/* Footer */
+.background {
+  background-color: #F3EDE7;
+  height: 28rem;
+  width: 101rem;
+  top: -5rem;
+  margin-bottom: -20rem;
+  position: relative;
+  right: 10rem;
+  z-index: -1;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 70rem;
+  grid-gap: 27rem;
+  position: relative;
+  top: 21rem;
+  left: 10rem;
+}
+
+.copyright {
+  width: 9rem;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.facebook:hover {
+  opacity: 0.5;
+}
+
+.twitter:hover {
+  opacity: 0.5;
+}
+
+.instagram:hover {
+  opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 770px) {
+  html {
+    overflow-x: hidden;
+    /* width: 100%; */
+  }
+
+  body {
+    /* background-color: #172339; */
+    margin: 1rem 2rem 0 2rem;
+  }
+
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 4rem;
+    width: 82rem;
+    /* align-items: center; */
+  }
+
+  /* Hero Rating */
+.rating {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15rem;
+  position: relative;
+  left: 4rem;
+  margin: auto;
+}
+
+.transparent{
+  position: relative;
+  right: 8rem;
+}
+
+.rectangle-blue {
+  grid-area: review;
+  background-color: var(--primary);
+  display: grid;
+  /* grid-gap: 1rem; */
+  grid-template-columns: 1fr;
+  border-radius: 1.5rem;
+  /* justify-content: center; */
+  width: 58.5rem;
+  height: 55rem;
+  position: relative;
+  top: 15rem;
+  margin-bottom: -15rem;
+}
+
+.jeremy {
+  text-align: center;
+  height: 20rem;
+  /* background-color: #A060FF; */
+}
+
+.jeremy-pic {
+  position: relative;
+  left: 18rem;
+  bottom: 37rem;
+}
+
+.curved-line {
+  /* background-color: #172339; */
+  position: relative;
+  left: 26rem;
+  top: 5rem;
+  /* bottom: 200rem; */
+  height: 4rem;
+  width: 5rem;
+}
+
+.message {
+  /* background-color: red; */
+  color: var(--light);
+  width: 40rem;
+  height: 20rem;
+  position: relative;
+  left: 8rem;
+  top: 7em;
+  line-height: 1.8rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.message p {
+  font-size: 1.4rem;
+  color: var(--background);
+}
+
+.mobile {
+  background-color: var(--primary);
+  position: relative;
+  top: -40rem;
+}
+
+.background {
+  background-color: #F3EDE7;
+  height: 50rem;
+  width:70.5rem;
+  top: -13rem;
+  margin-bottom: -20rem;
+  position: relative;
+  right: 10rem;
+  z-index: -1;
+}
+
+.footer {
+  grid-area: footer;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 58rem;
+  grid-gap: 17rem;
+  position: relative;
+  top: 42rem;
+  left: 10rem;
+}
+
+}
+
+@media only screen and (max-width: 430px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    /* background-color: #172339; */
+    margin: 1rem 2rem 0 2rem;
+  }
+
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    width: 82rem;
+    /* align-items: center; */
+  }
+
+  .hero-title p {
+    /* background-color: #172339; */
+    position: relative;
+    width: 30rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    top: -3.3rem;
+    color: var(--background);
+  }
+
+  /* Hero Rating */
+.rating {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  position: relative;
+  left:18rem;
+  top: 0.5rem;
+  margin-right: 75rem;
+}
+
+.transparent{
+  position: relative;
+  right: 22rem;
+}
+
+/* hero phone */
+.phone {
+  position: relative;
+  left: 0.1rem;
+  width: 50rem;
+  height: 30rem;
+  background-image: url("/assets/image-hero-landscape@2x.png");;
+  background-repeat: no-repeat;
+}
+
+.rectangle-blue {
+  grid-area: review;
+  background-color: var(--primary);
+  display: grid;
+  /* grid-gap: 1rem; */
+  grid-template-columns: 1fr;
+  border-radius: 1.5rem;
+  /* justify-content: center; */
+  width: 45rem;
+  height: 55rem;
+  position: relative;
+  top: 15rem;
+  margin-bottom: -15rem;
+}
+
+.jeremy {
+  text-align: center;
+  height: 20rem;
+  /* background-color: #A060FF; */
+}
+
+.jeremy-pic {
+  position: relative;
+  left: 10rem;
+  bottom: 37rem;
+}
+
+.curved-line {
+  /* background-color: #172339; */
+  position: relative;
+  left: 19rem;
+  top: 5rem;
+  /* bottom: 200rem; */
+  height: 4rem;
+  width: 5rem;
+}
+
+.message {
+  /* background-color: red; */
+  color: var(--light);
+  width: 20rem;
+  height: 35rem;
+  position: relative;
+  left: 11rem;
+  top: 7em;
+  line-height: 1.8rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.message p {
+  font-size: 1.4rem;
+  color: var(--background);
+}
+
+.mobile {
+  background-color: var(--primary);
+  position: relative;
+  top: -40rem;
+}
+
+.background {
+  background-color: #F3EDE7;
+  height: 60rem;
+  width:57rem;
+  top: -13rem;
+  margin-bottom: -20rem;
+  position: relative;
+  right: 10rem;
+  z-index: -1;
+}
+
+.footer {
+  grid-area: footer;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 58rem;
+  grid-gap: 1rem;
+  position: relative;
+  top: 47rem;
+  left: 28rem;
+
+}
+
+.copyright {
+  width: 9rem;
+  position: relative;
+  right: 1.2rem;
+}
+
+.social-media {
+  /* background-color: #172339; */
+  width: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+}
+}
